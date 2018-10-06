@@ -14,22 +14,65 @@ class Search extends Component {
 
 	componentDidMount() {
 
-		fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/list-event', {
-		  method: 'POST',
-		  headers: {
-		    'Accept': 'application/json',
-		    'Content-Type': 'application/json',
-		    'access-key': 'b01e7d160c1bb89350e0dff38f5363'
-		  },
-		  body: JSON.stringify({
-		    event: 'past',
-		    page: '1',
-		  })
-		})
-		.then(response => response.json())
-		.then((data) => {
-			this.setState({data: data.data});
-		});
+		// fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/list-event', {
+		//   method: 'POST',
+		//   headers: {
+		//     'Accept': 'application/json',
+		//     'Content-Type': 'application/json',
+		//     'access-key': 'b01e7d160c1bb89350e0dff38f5363'
+		//   },
+		//   body: JSON.stringify({
+		//     event: 'past',
+		//     page: '1',
+		//   })
+		// })
+		// .then(response => response.json())
+		// .then((data) => {
+		// 	this.setState({data: data.data});
+		// });
+
+		var data = [
+				{
+					id: 900,
+					images: ["https://media-cdn.tripadvisor.com/media/photo-s/0b/8b/4f/25/bandung-bandros-city.jpg"],
+					title: "Bandros",
+					type: "event",
+					description: "Berkeliling Bandung dengan Double Decker khas Bandung"
+				},
+				{
+					id: 901,
+					images: ["http://www.infobdg.com/v2/wp-content/uploads/2017/09/surabi_radja-@surabi_radja.jpg"],
+					title: "Surabi Cihapit",
+					type: "event",
+					description: "Surabi terkenal di Bandung"
+				},
+				{
+					"id":39,
+					"title":"Bandung Broadway 2018",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1538368114.jpeg"],
+					"type":"event"
+				},
+				{
+					"id":10,
+					"title":"Design Action Bandung",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1530124816.jpg"],
+					"type":"event"
+				},
+				{
+					"id":9,
+					"title":"BCH Festival",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1530124404.jpg"],
+					"type":"event"
+				},
+				{
+					"id":8,
+					"title":"Bandung Design Biennale 2017",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1530124241.png"],
+					"type":"event"
+				}
+			];
+
+			this.setState({data})
 
 	}
 
@@ -40,7 +83,7 @@ class Search extends Component {
 					<div className="recommendation-wrapper" key={list.id}>
 						<div className="row">
 							<div className="col-xs-2">
-								<img className="recommendation-image" src={list.image}/>
+								<img className="recommendation-image" src={list.images[0]}/>
 							</div>
 							<div className="col-xs-10">
 								<h4>{list.title}</h4>
