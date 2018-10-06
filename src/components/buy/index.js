@@ -19,7 +19,7 @@ class Buy extends Component {
 			productId = 10;
 		}
 
-		fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/detail-event?content_id=' + productId, {
+		fetch('http://patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/detail-event?content_id=' + productId, {
 			method: 'GET',
 		  headers: {
 		    'Accept': 'application/json',

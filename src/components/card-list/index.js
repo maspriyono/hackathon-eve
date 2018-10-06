@@ -13,7 +13,7 @@ class CardList extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/list-event', {
+		fetch('http://patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/list-event', {
 		  method: 'POST',
 		  headers: {
 		    'Accept': 'application/json',
@@ -46,7 +46,7 @@ class CardList extends Component {
 
 			for (var event in list.data) {
 
-				fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/detail-event?content_id=' + list.data[event].id, {
+				fetch('http://patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/detail-event?content_id=' + list.data[event].id, {
 					method: 'GET',
 				  headers: {
 				    'Accept': 'application/json',
