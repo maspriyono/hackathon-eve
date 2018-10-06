@@ -13,20 +13,20 @@ class CardList extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/list-event', {
-		  method: 'POST',
-		  headers: {
-		    'Accept': 'application/json',
-		    'Content-Type': 'application/json',
-		    'access-key': 'b01e7d160c1bb89350e0dff38f5363'
-		  },
-		  body: JSON.stringify({
-		    event: 'past',
-		    page: '1',
-		  })
-		})
-		.then(response => response.json())
-		.then((list) => {
+		// fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/list-event', {
+		//   method: 'POST',
+		//   headers: {
+		//     'Accept': 'application/json',
+		//     'Content-Type': 'application/json',
+		//     'access-key': 'b01e7d160c1bb89350e0dff38f5363'
+		//   },
+		//   body: JSON.stringify({
+		//     event: 'past',
+		//     page: '1',
+		//   })
+		// })
+		// .then(response => response.json())
+		// .then((list) => {
 			var data = [
 				{
 					id: 900,
@@ -41,31 +41,55 @@ class CardList extends Component {
 					title: "Surabi Cihapit",
 					type: "event",
 					description: "Surabi terkenal di Bandung"
+				},
+				{
+					"id":39,
+					"title":"Bandung Broadway 2018",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1538368114.jpeg"],
+					"type":"event"
+				},
+				{
+					"id":10,
+					"title":"Design Action Bandung",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1530124816.jpg"],
+					"type":"event"
+				},
+				{
+					"id":9,
+					"title":"BCH Festival",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1530124404.jpg"],
+					"type":"event"
+				},
+				{
+					"id":8,
+					"title":"Bandung Design Biennale 2017",
+					"images":["http:\/\/patrakomala.disbudpar.bandung.go.id:8080\/uploads\/event_news\/1530124241.png"],
+					"type":"event"
 				}
 			];
 
-			for (var event in list.data) {
+			// for (var event in list.data) {
 
-				fetch('http://patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/detail-event?content_id=' + list.data[event].id, {
-					method: 'GET',
-				  headers: {
-				    'Accept': 'application/json',
-				    'Content-Type': 'application/json',
-				    'access-key': 'b01e7d160c1bb89350e0dff38f5363'
-				  },
-				})
-				.then((response) => response.json())
-				.then((event) => {
-					const newData = {
-						...list.data[event],
-						...event.data
-					}
-					data.push(newData);
+			// 	fetch('http://localhost:1337/patrakomala.disbudpar.bandung.go.id:8080/api/v1/public/event/detail-event?content_id=' + list.data[event].id, {
+			// 		method: 'GET',
+			// 	  headers: {
+			// 	    'Accept': 'application/json',
+			// 	    'Content-Type': 'application/json',
+			// 	    'access-key': 'b01e7d160c1bb89350e0dff38f5363'
+			// 	  },
+			// 	})
+			// 	.then((response) => response.json())
+			// 	.then((event) => {
+			// 		const newData = {
+			// 			...list.data[event],
+			// 			...event.data
+			// 		}
+			// 		data.push(newData);
 					this.setState({data});
-				})
-			}
+			// 	})
+			// }
 
-		});
+		// });
 	}
 
 	_pop = (params) => {
