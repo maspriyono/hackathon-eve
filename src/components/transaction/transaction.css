@@ -1,0 +1,23 @@
+.tabs {
+	list-style: none;
+	cursor: pointer;
+	padding: 16px;
+	text-align: center;
+}
+.tab-active {
+	background-color: #6613ED;
+	color: #fff;
+}
+.tabs:hover {
+	background-color: #dedede;
+	color: #fff;
+}
+.form {
+	padding: 16px;
+}
+.payment-method-wrapper, .transaction-detail {
+	border: 1px solid #dedede;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 8px;
+}

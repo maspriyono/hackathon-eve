@@ -1,0 +1,18 @@
+body {
+	background-color: transparent;
+}
+.container {
+	max-width: 600px !important;
+}
+.hiddenContainer {
+	visibility: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

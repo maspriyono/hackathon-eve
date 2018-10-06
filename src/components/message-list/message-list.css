@@ -1,0 +1,75 @@
+.photo-container {
+}
+.message-container {
+	margin-left: 8px;
+}
+.sender-info {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.menu {
+	border: 2px solid #dedede;
+	border-radius: 8px;
+	padding: 16px;
+	margin-top: 12px;
+	cursor: pointer;
+}
+.menu:hover {
+	background-color: #6613ED;
+	color: #fff;
+}
+.menu-icon-container {
+	text-align: center;
+	font-size: 18px;
+	text-align: middle;
+	display: table;
+  	width: 100%;
+}
+.menu-icon {
+	margin-top: 12px;
+	margin-left: 12px;
+}
+.separator {
+	width: 100%; 
+   	text-align: left; 
+   	border-bottom: 1px solid #dedede; 
+   	line-height: 0.1em;
+   	margin: 10px 0px 20px;
+}
+.separator span {
+	background: #fff; 
+    padding: 0 8px;
+}
+.message-list-root {
+}
+.menu-container {
+	color: #000;
+}
+.profile-name-header {
+	margin-top: 20px;
+}
+.footer-chat {
+	position: fixed;
+	bottom: 54px;
+	left: 0px;
+	height: 48px;
+	width: 100%;
+}
+.chat-field {
+	padding: 24px;
+}
+.arrow-left {
+	margin-top: 16px;
+}
+.user-name-header {
+	margin-top: 20px;
+}
+.btn-send {
+	position: absolute;
+	bottom: 6px;
+	right: 8px;
+	height: 36px;
+	width: 36px;
+	border: none;
+	background-color: none;
+}

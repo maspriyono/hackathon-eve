@@ -1,0 +1,99 @@
+.img-card {
+  	width: 100%;
+}
+.card-action {
+	width: 100%;
+}
+.card-info {
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-top: 0px;
+}
+.card-holder {
+	border-radius: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 640px;
+	z-index: 1;
+}
+.stack-1 {
+	border-radius: 16px;
+	background-color: #dedede;
+	width: 85%;
+    height: 400px;
+    position: absolute;
+    top: -8px;
+    left: 24px;
+    z-index: 0;
+}
+.stack-2 {
+	border-radius: 16px;
+	background-color: #dddddd4f;
+	width: 75%;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 36px;
+}
+.btn-no {
+	background-color: red;
+	position: fixed;
+	bottom: 60px;
+	left: 40px;
+	height: 64px;
+	width: 64px;
+	border-radius: 32px;
+	color: #fff;
+}
+.btn-yes {
+	background-color: green;
+	position: fixed;
+	bottom: 60px;
+	right: 40px;
+	height: 64px;
+	width: 64px;
+	border-radius: 32px;
+	color: #fff;
+}
+.profile-picture {
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+	margin-top: 8px;
+}
+.card-profile {
+	padding: 16px;
+}
+.action-buttons {
+	background-color: none;
+	border: none;
+}
+.action-button {
+	font-size: 24px;
+	text-align: center;
+	margin: 12px;
+}
+.btn-chat {
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	border: none;
+	background-color: #6613ED;
+	position: fixed;
+	bottom: 60px;
+	right: 160px;
+	text-align: center;
+	color: white;
+}
+.btn-buy {
+	margin-top: 4px;
+	border: 1px solid #dedede;
+	border-radius: 8px;
+}
+.btn-buy:hover {
+	background-color: #6613ED;
+	color: white;
+}
+.text-buy {
+	margin-top: 14px;
+}
