@@ -82,10 +82,10 @@ class Search extends Component {
 				<Link to={`/buy/` + list.id} key={list.id}>
 					<div className="recommendation-wrapper" key={list.id}>
 						<div className="row">
-							<div className="col-xs-2">
+							<div className="col-xs-3">
 								<img className="recommendation-image" src={list.images[0]}/>
 							</div>
-							<div className="col-xs-10">
+							<div className="col-xs-9">
 								<h4>{list.title}</h4>
 								<p className="badge badge-default">{list.type}</p>
 							</div>

@@ -140,14 +140,14 @@ class CardList extends Component {
 								<div className="col-xs-2">
 									<FontAwesomeIcon className="action-button" icon="share"/>
 								</div>
-								<div className="col-xs-4"></div>
-								<div className="col-xs-3">
+								<div className="col-xs-1"></div>
+								<div className="col-xs-5">
 									<Link to={`/buy/` + card.id}>
 										<div className="row btn-buy">
-											<div className="col-xs-3">
+											<div className="col-xs-2">
 												<p className="text-buy"><strong>Rp</strong></p>
 											</div>
-											<div className="col-xs-8">
+											<div className="col-xs-9">
 												<p className="text-buy">Beli</p>
 											</div>
 										</div>

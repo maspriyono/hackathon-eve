@@ -65,10 +65,10 @@ class Profile extends Component {
 			return this.state.data.map((list) => (
 				<div className="recommendation-wrapper" key={list.id}>
 					<div className="row">
-						<div className="col-xs-2">
+						<div className="col-xs-3">
 							<img className="recommendation-image" src={list.image}/>
 						</div>
-						<div className="col-xs-10">
+						<div className="col-xs-9">
 							<h4>{list.title}</h4>
 							<p>{list.description}</p>
 						</div>
@@ -97,10 +97,10 @@ class Profile extends Component {
 	    		</div>
 	    		<div className="profile-header">
 		    		<div className="row">
-			    		<div className="col-xs-2">
+			    		<div className="col-xs-3">
 			    			<img className="recommendation-image" src='https://randomuser.me/api/portraits/women/26.jpg'/>
 			    		</div>
-			    		<div className="col-xs-10">
+			    		<div className="col-xs-9">
 			    			<h4>Name</h4>
 			    			<p>@uniquename</p>
 			    		</div>

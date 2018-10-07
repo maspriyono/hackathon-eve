@@ -65,13 +65,15 @@
 	padding: 16px;
 }
 .action-buttons {
-	background-color: none;
+	background-color: #fff;
 	border: none;
 }
 .action-button {
 	font-size: 24px;
 	text-align: center;
 	margin: 12px;
+	border: none;
+	text-align: center;
 }
 .btn-chat {
 	width: 64px;
@@ -81,7 +83,7 @@
 	background-color: #6613ED;
 	position: fixed;
 	bottom: 60px;
-	left: 43%;
+	left: 42%;
 	text-align: center;
 	color: white;
 }
